@@ -90,7 +90,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url(../images/RPSCAT.jpg);
+    background-image: url(images/RPSCAT.jpg);
     background-size: auto 1050px;
     z-index: 200;
     color: rgba(0, 78, 142, 0.875);
