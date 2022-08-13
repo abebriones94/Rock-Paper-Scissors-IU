@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(203, 201, 78, 0.846), rgb(213, 120, 120));
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: rgb(46, 38, 38);
+    text-shadow: 0 0 3px rgb(100, 95, 95);
+    font-family: Chalkduster, fantasy;
+    text-align: center;
+  }
+  
+  .choices {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin-top: 200px;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .playerImgs,
+  .computerImgs {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    background: rgb(196, 129, 196);
+    padding: 20px;
+    border: solid black 5px;
+    border-radius: 10px;
+    max-height: 100px;
+  }
+  
+  img {
+    width: 90px;
+    height: 90px;
+    border: solid wheat;
+  }
+  
+  .pImg:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    border: solid wheat;
+  }
+  
+  .roundInfo {
+    display: flex;
+    height: 20px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .winner {
+    width: 100%;
+  }
+  
+  .reset {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(105, 234, 7, 0.472);
+    color: black;
+    font-size: x-large;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-shadow: 0 0 3px rgb(100, 95, 95);
+  }
+  
+  .reset:hover {
+    cursor: pointer;
+  }
+  
+  .winnerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(/images/RPSCAT.jpg);
+    background-size: auto 1050px;
+    z-index: 200;
+    color: rgba(0, 78, 142, 0.875);
+    text-align: 100px;
+    line-height: 90vh;
+  }
+  
+  .splash.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 3;
+    animation: fadeIn 1s ease-in forwards;
+    position: relative;
+    top: -230px;
+   
+  }
